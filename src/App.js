@@ -11,8 +11,8 @@ import Footer from './component/Footer';
 import SimpleCart from "./component/SimpleCart";
 import AddProduct from './component/AddProduct';
 import FavList from './component/FavList';
-import Register from './component/Register';
-import Login from './component/Login';
+import Signup from './component/auth/Signup/Signup';
+import Sigin from './component/auth/Signin/Signin';
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
         <Header />
         <SimpleCart />
         <Routes>
-        <Route path="login" element={<Login />} />
-        <Route path="register" element={<Register />} />
+        <Route path="/signin" element={<Sigin />} />
+        <Route path="/signup" element={<Signup />} />
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<Product />} />

@@ -14,13 +14,13 @@ const handleDel = (item) => {
 const cartItems = (product) => {
     return (
     <div
-        className=" position-relative "
+        className=" absolute"
         style={{ minHeight: "120px" }}
         key={product.id}
     >
 
         <ToastContainer   position="top-end" className="p-3 ">
-        <Toast className="d-flex justify-content-center  align-items-center">
+        <Toast className="d-flex justify-content-center  align-items-center ">
             <img
             src={product.image}
             alt={product.title}
